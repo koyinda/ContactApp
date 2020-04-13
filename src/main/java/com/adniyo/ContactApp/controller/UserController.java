@@ -119,7 +119,7 @@ public class UserController {
         if(userService.isUsernameExist(username)){
             return "This username is already taken. Choose another name";
         }else{
-            return "Yes! You can take this";
+            return "Yes! This Option is availiable";
         }
     }
     @RequestMapping(value = "/user_search")
