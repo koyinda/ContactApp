@@ -17,7 +17,7 @@
 			<p class="alert alert-primary" role="alert">Contact updated successfully!</p>
 	 </c:if>
 
-	<form class="form-inline md-form mr-auto mb-4"  action="<s:url value="user_search"/>" >
+	<form class="form-inline md-form mr-auto mb-4"  action="<s:url value="/user_search"/>" >
   		<input class="form-control mr-sm-2" type="text" name="freeText" value="${param.freeText}" placeholder="Enter Text To Search" aria-label="Search">
 		<button class="btn btn-elegant btn-rounded btn-sm my-0" type="submit">Search</button>
 	</form>            					

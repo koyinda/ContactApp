@@ -10,8 +10,8 @@
 								<p>Logout Successful! Thanks for using this contact Application</p>
 						 </c:if>						
 					</header>
-					<a href="/ContactApp/register" class="button">Register</a>
-					<a href="/ContactApp/login" class="button">Login</a>
+					<a href="/ContactApp/register" class="btn btn-primary">Register</a>
+					<a href="/ContactApp/login" class="btn btn-primary">Login</a>
 				</div>
 			</section>
 <jsp:include page="include/footer.jsp"></jsp:include>

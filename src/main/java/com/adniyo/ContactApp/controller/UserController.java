@@ -122,4 +122,9 @@ public class UserController {
             return "Yes! You can take this";
         }
     }
+    @RequestMapping(value = "/user_search")
+    public String contactSearch(Model m, HttpSession session, @RequestParam("freeText") String freeText) {
+        m.addAttribute("userList", userService.findUser( freeText));
+        return "ulist"; //JSP
+    } 
 }

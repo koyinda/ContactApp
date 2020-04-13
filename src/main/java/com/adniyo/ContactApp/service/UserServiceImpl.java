@@ -75,5 +75,11 @@ public class UserServiceImpl extends BaseDAO implements UserService {
 	        Integer count = getJdbcTemplate().queryForObject(sql, new String[]{username}, Integer.class);
 	        return count>0 ? true : false;
 	}
+	public List<User> findUser(String txt) {
+		// TODO Auto-generated method stub
+		String sql = "SELECT userid, name, phone, email, address, username, role, userStatus FROM users WHERE (name LIKE '%"+ txt+ "%' OR address LIKE '%"+txt+"%' OR phone LIKE '%"+txt+"%' OR email LIKE '%"+txt+"%')";
+        
+		return getJdbcTemplate().query(sql, new UserRowMapper()); 
+	}
 
 }
